@@ -12,7 +12,7 @@ Before starting solving the problem assume:
 
 With optimal trajectory I mean the trajectory that minimize the "used energy" for going from A to B.
 This statement can be formalized as the following minimization problem:
-\begin{equation}
+$$
 \begin{aligned}
   \min\limits_{F_x, F_y, F_z} J &= \min\limits_{F_x, F_y, F_z} \int\limits_{0}^{T} \dfrac{1}{2}(F_x^2 + F_y^2 + F_z^2) \dd t \\
   &\text{subject to} \\
@@ -35,7 +35,7 @@ This statement can be formalized as the following minimization problem:
       w(0) = w_A \quad w(T) = w_B\\
   \end{cases}
 \end{aligned}
-\end{equation}
+$$
 
 
 This kind of optimization problem can be solved via the Pontryagin minimum principle.
