@@ -14,7 +14,7 @@ With optimal trajectory I mean the trajectory that minimize the "used energy" fo
 This statement can be formalized as the following minimization problem:
 $$
   \begin{cases}
-    \min_{F_x, F_y, F_z} J = \min_{F_x, F_y, F_z} \int_{0}^{T} \dfrac{1}{2}(F_x u + F_y v + F_z w)^2 dt \\
+    \min\limits_{F_x, F_y, F_z} J = \min\limits_{F_x, F_y, F_z} \int\limits_{0}^{T} \dfrac{1}{2}(F_x u + F_y v + F_z w)^2 dt \\
     \dot x = u \\
     \dot y = v \\
     \dot z = w \\
