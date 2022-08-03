@@ -12,6 +12,7 @@ Before starting solving the problem assume:
 
 With optimal trajectory I mean the trajectory that minimize the "used energy" for going from A to B.
 This statement can be formalized as the following minimization problem:
+
 $$
   \min\limits_{F_x, F_y, F_z} J = \min\limits_{F_x, F_y, F_z} \int\limits_{0}^{T} \dfrac{1}{2}(F_x^2 + F_y^2 + F_z^2) \dd t
 $$
@@ -40,11 +41,13 @@ $$
 This kind of optimization problem can be solved via the Pontryagin minimum principle.
 
 The hamiltonian of the system is:
+
 $$
   H = \lambda_1 u + \lambda_2 v + \lambda_3 w + \lambda_4 F_x + \lambda_5 F_y + \lambda_6 (F_z-g) + \dfrac{1}{2}(F_x^2+F_y^2+F_z^2)
 $$
 
 So the set of equations resulting from Pontryagin principle is:
+
 $$
   \begin{aligned}
     \pdv{H}{F_x} = \lambda_4 + F_x = 0
@@ -88,6 +91,7 @@ $$
 $$
 
 The optimal dynamics is then described by the following equations:
+
 $$
   \begin{aligned}
     \dot u &= \lambda_{10} t + \lambda_{40} \\
@@ -100,6 +104,7 @@ $$
 $$
 
 Which solution is:
+
 $$
 \begin{aligned}
     u(t) &= \lambda_{10} \dfrac{t^2}{2} + \lambda_{40} t + u_A \\
@@ -112,6 +117,7 @@ $$
 $$
 
 The values of $\lambda_{i0}$ with $i=1\dots6$ are computed considering that
+
 $$
 \begin{aligned}
     u(T) = u_B \\
