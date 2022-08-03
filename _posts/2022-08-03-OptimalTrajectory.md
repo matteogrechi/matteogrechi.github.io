@@ -36,6 +36,8 @@ $$
   \end{cases}
 \end{aligned}
 $$
+
+
 This kind of optimization problem can be solved via the Pontryagin minimum principle.
 
 The hamiltonian of the system is:
