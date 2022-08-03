@@ -44,20 +44,17 @@ The hamiltonian of the system is:
 $$
 H = \lambda_1 u + \lambda_2 v + \lambda_3 w + \lambda_4 F_x + \lambda_5 F_y + \lambda_6 (F_z-g) + \dfrac{1}{2}(F_x^2+F_y^2+F_z^2)
 $$
+
 So the set of equations resulting from Pontryagin principle is:
 $$
 \begin{aligned}
 \pdv{H}{F_x} = \lambda_4 + F_x = 0
 &\implies
 F_x = - \lambda_4
-
 \\
-
 \pdv{H}{F_y}=0
 &\implies F_y = -\lambda_5
-
 \\
-
 \pdv{H}{F_z}=0
 &\implies F_z = -\lambda_6
 \end{aligned}
@@ -68,33 +65,23 @@ $$
 \dot \lambda_1 = - \pdv{H}{x} = 0
 &\implies
 \lambda_1 = \lambda_{10}
-
 \\
-
 \dot \lambda_2 = - \pdv{H}{y} = 0
 &\implies
 \lambda_2 = \lambda_{20}
-
 \\
-
 \dot \lambda_3 = - \pdv{H}{z} = 0
 &\implies
 \lambda_3 = \lambda_{30}
-
 \\
-
 \dot \lambda_4 = - \pdv{H}{u} = - \lambda_1
 &\implies
 \lambda_4 = - \lambda_{10} t + \lambda_{40}
-
 \\
-
 \dot \lambda_4 = - \pdv{H}{v} = - \lambda_2
 &\implies
 \lambda_5 = - \lambda_{20} t + \lambda_{50}
-
 \\
-
 \dot \lambda_6 = - \pdv{H}{w} = - \lambda_3
 &\implies
 \lambda_6 = - \lambda_{30} t + \lambda_{60}
@@ -112,6 +99,7 @@ $$
 	\dot z &= w \\
 \end{aligned}
 $$
+
 Which solution is:
 $$
 \begin{aligned}
@@ -123,6 +111,7 @@ $$
 	z(t) &= \lambda_{30} \dfrac{t^3}{6} + (\lambda_{60} - g) \dfrac{t^2}{2} + v_A t + z_A\\ \\
 \end{aligned}
 $$
+
 The values of $\lambda_{i0}$ with $i=1\dots6$ are computed considering that
 $$
 \begin{aligned}
