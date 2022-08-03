@@ -23,15 +23,16 @@
     <script>
       MathJax = {
         tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          equationNumbers: { autoNumber: "AMS" }
         },
         svg: {
           fontCache: 'global'
         }
       };
-      MathJax.Hub.Config({
+      /*MathJax.Hub.Config({
         TeX: { equationNumbers: { autoNumber: "AMS" } }
-      });
+      });*/
     </script>
     <script type="text/javascript" id="MathJax-script" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
