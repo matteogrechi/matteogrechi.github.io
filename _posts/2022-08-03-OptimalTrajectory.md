@@ -13,26 +13,28 @@ Before starting solving the problem assume:
 With optimal trajectory I mean the trajectory that minimize the "used energy" for going from A to B.
 This statement can be formalized as the following minimization problem:
 $$
-\min\limits_{F_x, F_y, F_z} J = \min\limits_{F_x, F_y, F_z} \int\limits_{0}^{T} \dfrac{1}{2}(F_x^2 + F_y^2 + F_z^2) \dd t \\
-\text{subject to} \\
-\begin{cases}
-    \dot x = u \\
-    \dot y = v \\
-    \dot z = w \\
-    \dot u = F_x \\
-    \dot v = F_y \\
-    \dot w = F_z - g \\
-\end{cases}
-\quad
-\text{with}
-\begin{cases}
-  	x(0) = x_A \quad x(T) = x_B \\ 
-    y(0) = y_A \quad y(T) = y_B\\
-    z(0) = z_A \quad z(T) = z_B\\
-    u(0) = u_A \quad u(T) = u_B\\
-    v(0) = v_A \quad v(T) = v_B\\
-    w(0) = w_A \quad w(T) = w_B\\
-\end{cases}
+\begin{aligned}
+  \min\limits_{F_x, F_y, F_z} J &= \min\limits_{F_x, F_y, F_z} \int\limits_{0}^{T} \dfrac{1}{2}(F_x^2 + F_y^2 + F_z^2) \dd t \\
+  &\text{subject to} \\
+  \begin{cases}
+      \dot x = u \\
+      \dot y = v \\
+      \dot z = w \\
+      \dot u = F_x \\
+      \dot v = F_y \\
+      \dot w = F_z - g \\
+  \end{cases}
+  \quad
+  &\text{with}
+  \begin{cases}
+      x(0) = x_A \quad x(T) = x_B \\ 
+      y(0) = y_A \quad y(T) = y_B\\
+      z(0) = z_A \quad z(T) = z_B\\
+      u(0) = u_A \quad u(T) = u_B\\
+      v(0) = v_A \quad v(T) = v_B\\
+      w(0) = w_A \quad w(T) = w_B\\
+  \end{cases}
+\end{aligned}
 $$
 This kind of optimization problem can be solved via the Pontryagin minimum principle.
 
