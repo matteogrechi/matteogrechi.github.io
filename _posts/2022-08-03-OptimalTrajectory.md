@@ -12,8 +12,8 @@ Before starting solving the problem assume:
 
 With optimal trajectory I mean the trajectory that minimize the "used energy" for going from A to B.
 This statement can be formalized as the following minimization problem:
-
-  \begin{equation}
+\begin{equation}
+  \begin{cases}
     \min\limits_{F_x, F_y, F_z} J = \min\limits_{F_x, F_y, F_z} \int\limits_{0}^{T} \dfrac{1}{2}(F_x u + F_y v + F_z w)^2 dt \\
     \dot x = u \\
     \dot y = v \\
@@ -27,5 +27,5 @@ This statement can be formalized as the following minimization problem:
     u(0) = u_A \quad u(T) = u_B\\
     v(0) = v_A \quad v(T) = v_B\\
     w(0) = w_A \quad w(T) = w_B\\
-  \end{equation}
-
+  \end{cases}
+\end{equation}
