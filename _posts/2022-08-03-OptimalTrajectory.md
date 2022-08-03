@@ -26,7 +26,7 @@ $$
       \dot v = F_y \\
       \dot w = F_z - g \\
   \end{cases}
-  \quad &\text{with }
+  \quad \text{with }
   \begin{cases}
       x(0) = x_A \quad x(T) = x_B \\ 
       y(0) = y_A \quad y(T) = y_B\\
