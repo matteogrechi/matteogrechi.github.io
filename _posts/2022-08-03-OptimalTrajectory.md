@@ -3,16 +3,13 @@ layout: post
 title: What is the best way to go from A to B?
 ---
 
-The problem I want to discuss in this post is how it is possible to optimize the trajectory of a body.
+The process of trajectory optimization is very present in engineering. Whenever we want to study the trajectory of a spacecraft heading to Mars or how to move a robotic arm, at some point in the process, we will need to design an optimal trajectory.
 
-This kind of problem is very present in engineering, some examples are:
+In this post I want to show a possible procedure that can be followed to design an optimal trajectory. 
 
-1. spacecraft trajectory optimization
-2. drone trajectory optimization
-3. car trajectory optimization
-4. robotic arm motion planning
+For the sake of simplicity let's consider the case of a point mass moving in 3D space that needs to go from a point A with an initial velocity $\vec v_A$ to a point B with a final velocity $\vec v_B$ in time T. 
 
-For the sake of simplicity let's consider the case of a point mass moving in 3D space that want to go from a point A to a point B with initial velocity and final velocity specified.
+Note: with some fantasy, the discussed case can be linked to the case of motion planning of a quadcopter drone. Unfortunately, in the latter, the discussion is more complicated due to more complex nature of the quadcopter. However, the following results, can be used as a sub-optimal approximation.
 
 Before continuing solving the problem assume:
 
