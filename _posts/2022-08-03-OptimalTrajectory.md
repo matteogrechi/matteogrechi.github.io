@@ -26,14 +26,17 @@ In order to solve this problem we need to define in a precise way what we mean w
 One possible criteria of optimality is the total energy used to go from A to B, so, the optimal path from A to B will minimize the total energy required to follow that path.
 
 In order to keep the calculation simple enough, the optimality criteria discussed here is half the average value of the squared force multiplied by the time needed to go from A to B, namely,
+
 $$
 J = \int\limits_{0}^{T} \dfrac{1}{2} (F_x^2 + F_y^2 + F_z^2) \dd t
 $$
+
 where $J$ denotesthe cost function while $F_x$, $F_y$ and $F_z$ denotes the control force acting on the body in the $x$, $y$, and $z$ directions.
 
 Once we have clarified that the optimal trajectory will minimize the cost function just defined, in order to solve the problem, we need to formalize it.
 
 The optimal trajectory can be found by solving the following constrained minimization problem:
+
 $$
   \min\limits_{F_x, F_y, F_z} J = \min\limits_{F_x, F_y, F_z} \int\limits_{0}^{T} \dfrac{1}{2}(F_x^2 + F_y^2 + F_z^2) \dd t
 $$
@@ -74,6 +77,7 @@ $$
 $$
 
 Pontryagin's principle says that the optimal control strategy shall obey the following equations:
+
 $$
 \begin{cases}
     \pdv{H}{F_x} = 0 \\
@@ -90,7 +94,9 @@ $$
     \dot \lambda_6 = - \pdv{H}{w} 
   \end{cases}
 $$
+
 The solutions of the above equations are:
+
 $$
 \begin{aligned}
     \pdv{H}{F_x} = \lambda_4 + F_x = 0
