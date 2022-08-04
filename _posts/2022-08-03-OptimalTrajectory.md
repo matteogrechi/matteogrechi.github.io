@@ -9,7 +9,7 @@ In this post I want to show a possible procedure that can be followed to design 
 
 For the sake of simplicity let's consider the case of a point mass moving in 3D space that needs to go from a point A with an initial velocity $\vec v_A$ to a point B with a final velocity $\vec v_B$ in time T. 
 
-Note: with some fantasy, the discussed case can be linked to the case of motion planning of a quadcopter drone. Unfortunately, in the latter, the discussion is more complicated due to more complex nature of the quadcopter. However, the following results, can be used as a sub-optimal approximation.
+Note: with some fantasy, the discussed case can be linked to the case of motion planning of a quadcopter drone. Unfortunately, in the latter, the discussion is more complicated due to the more complex nature of the quadcopter. However, the following results, can be used as a sub-optimal approximation.
 
 Before continuing solving the problem assume:
 
