@@ -9,7 +9,7 @@ For example let's consider a gyroscope, a sensor which output is the angular spe
 
 Another problem that we want to solve is related to the best operative conditions of a sensor. 
 
-Let's consider a spinning satellite. A possible way to estimate its orientation is to use a star sensor (a sensor that recognize the starts in the sky and, since stars position is constant in time, it outputs the satellite orientation). Since star sensors might have a slow refresh rate, they usually have a bad estimate of the angular velocity, useful for control purposes. Moreover, a slow refresh rate means a "mostly coarse" orientation estimate since the orientation is accurate only near the sensor update. 
+Let's consider a spinning satellite. A possible way to estimate its orientation is to use a star sensor, a sensor that recognize the starts in the sky and, since their position is constant in time, it outputs the satellite orientation. Since star sensors might have a slow refresh rate, they usually have a bad estimate of the angular velocity, useful for control purposes. Moreover, a slow refresh rate means a "mostly coarse" orientation estimate since the orientation is accurate only near the sensor update. 
 
 A gyroscope, on the other hand, has a higher refresh rate. The problem with it is that it doesn't measure the orientation but the angular velocity. In an ideal world the orientation is the integral in time of the angular velocity but, since in the real world the measurements are not perfect, when integrating in time the error builds up. If for shorter integration periods the estimate of the orientation is accurate, for longer time periods this stops to be true.
 
