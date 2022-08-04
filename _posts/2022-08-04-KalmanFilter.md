@@ -15,7 +15,7 @@ A gyroscope, on the other hand, has a higher refresh rate. The problem with it i
 
 One last question is: is it possible to mix an imprecise theoretical model with the sensors readings in a way to improve the quality of the measurements?
 
-A possible answer to all the discussed doubts and questions is "Kalman filter".
+A possible answer to all the discussed doubts and questions is "[Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter)".
 
 A Kalman filter, in its original flavour, is a statistically optimal linear observer.
 
