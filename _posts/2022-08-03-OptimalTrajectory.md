@@ -3,7 +3,7 @@ layout: post
 title: What is the best way to go from A to B?
 ---
 
-The problem I want to discuss in this post is how it is possible to optimize a trajectory of a body.
+The problem I want to discuss in this post is how it is possible to optimize the trajectory of a body.
 
 This kind of problem is very present in engineering, some examples are:
 
