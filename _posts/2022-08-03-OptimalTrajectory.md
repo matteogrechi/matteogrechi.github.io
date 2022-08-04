@@ -68,7 +68,7 @@ The dot over a function represents the time derivative of that function. For exa
 
 Note: minimizing $J$ is not enough, we need also to impose the equations of the dynamics of the mass in order to achieve a result that have sense. If we don't impose that, for example, $\dot x = u$, at the end of the optimization process, the quantity $u$ will not represents the velocity along the $x$ direction. Moreover, if we don't impose that $\dot u = F_x$, the mass motion will not respect the Newton's laws of motion.
 
-This kind of optimization problem can be solved via the [Pontryagin minimum principle](https://en.wikipedia.org/wiki/Pontryagin's_maximum_principle).
+One possible way to solve this kind of optimization problem is to use the [Pontryagin minimum principle](https://en.wikipedia.org/wiki/Pontryagin's_maximum_principle).
 
 To apply this principle we need to define the hamiltonian $H$ of the system as:
 
