@@ -62,7 +62,7 @@ $$
   \end{cases}
 $$
 
-where $x$, $y$, and $z$ are functions of time that denotes the coordinates of the point mass in the space; $u$, $v$, and $w$ are functions of time that denotes the velocity of the point mass in the $x$, $y$, and $z$ directions; $g$ is a constant that represent the gravity acceleration ($9.81$ m/s$^2$) and $T$ is a parameter that represent the final time at which the point mass will reach point $B$.
+where $x$, $y$, and $z$ are functions of time that denotes the coordinates of the point mass in the space; $u$, $v$, and $w$ are functions of time that denotes the velocity of the point mass in the $x$, $y$, and $z$ directions; $g$ is a constant that represent the gravity acceleration ( $9.81$ m/s$^2$ ) and $T$ is a parameter that represent the final time at which the point mass will reach point $B$.
 
 The dot over a function represents the time derivative of that function. For example, $\dot x$ is the time derivative of $x$; $\dot y$ is the time derivative of $y$ and so on. 
 
